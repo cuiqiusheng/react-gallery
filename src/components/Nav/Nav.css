@@ -1,0 +1,71 @@
+.box{
+    height: 100%;
+}
+.nav li a:hover{
+	background: #40444e;
+	/*-webkit-transition: all 0.2s cubic-bezier(0.62, 0.24, 0.92, 0.54);*/
+}
+/*.nav li:nth-child(1) a span{
+	position: absolute;
+	left: 36px;
+	top: 13px;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/sprites.png);
+	background-position: -21px -20px;
+}
+.nav li:nth-child(1) a.active span{
+	background-position: -64px -20px;
+}
+.nav li:nth-child(2) a span{
+	position: absolute;
+	left: 36px;
+	top: 13px;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/sprites.png);
+	background-position: -21px -70px;
+}
+.nav li:nth-child(2) a.active span{
+	background-position: -64px -70px;
+}
+.nav li:nth-child(3) a span{
+	position: absolute;
+	left: 36px;
+	top: 13px;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/sprites.png);
+	background-position: -21px -120px;
+}
+.nav li:nth-child(3) a.active span{
+	background-position: -64px -120px;
+}
+.nav li:nth-child(4) a span{
+	position: absolute;
+	left: 36px;
+	top: 13px;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/sprites.png);
+	background-position: -21px -170px;
+}
+.nav li:nth-child(4) a.active span{
+	background-position: -64px -170px;
+}
+.nav li:nth-child(5) a span{
+	position: absolute;
+	left: 36px;
+	top: 13px;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/sprites.png);
+	background-position: -21px -220px;
+}
+.nav li:nth-child(5) a.active span{
+	background-position: -64px -220px;
+}*/
+
+
+
+
