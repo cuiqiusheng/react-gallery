@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HeaderForm from  './HeaderForm/HeaderForm';
+import HeaderForm from  './HeaderForm';
 
 class HeaderFormBox extends React.Component{
     render(){
