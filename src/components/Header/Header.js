@@ -1,7 +1,7 @@
 import React from 'react';
 
-import HeaderLogo from './HeaderLogo/HeaderLogo';
-import HeaderFormBox from  './HeaderFormBox/HeaderFormBox';
+import HeaderLogo from './HeaderLogo';
+import HeaderFormBox from  './HeaderFormBox';
 import imgUrl from './banner.jpg';
 
 class Header extends React.Component{
