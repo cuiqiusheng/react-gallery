@@ -9,7 +9,7 @@ let Nav = require('./Nav/Nav.js');
 class App extends React.Component{
     render(){
         return (
-            <div>
+            <div className="rootApp">
                 <Header />
                 <Nav />
             </div>

@@ -1,7 +1,7 @@
 /* Base Application Styles */
 
 #app{height: 100%;}
-#app div:nth-child(1){height: 100%;}
+.rootApp{height: 100%;}
 /*取消默认样式*/
 body, html{height: 100%;}
 body{overflow: hidden;}
