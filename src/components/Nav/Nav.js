@@ -1,39 +1,55 @@
 import React from 'react';
 
+import sprites from '../../images/sprites.png';
+
 var NavLi = React.createClass({
     getInitialState: function(){
-        return {
-            borderLeft: '4px solid #32363e',
-            background: '#32363e',
-            color: '#a7aaab'
-        };
+        return {hover: false}
     },
-    getActiveState: function(){
-        return {
-            borderLeft: '4px solid #e55d74',
-            background: '#40444e',
-            color: '#e55d74',
-            transition: 'all 0.25s cubic-bezier(0.35,-0.66, 0.85, 2.11)'
-        };
-    },
-    handleClick: function(){
-        alert(1)
+    toggleHover: function(){
+        this.setState({hover: !this.state.hover})
     },
     render: function(){
-        let liAStyle = {
-            position: 'relative',
-            display: 'block',
-            height: '52px',
-            lineHeight: '52px',
-            fontSize: '18px',
-            paddingLeft: '85px',
-            borderLeft: '4px solid #32363e',
-            color: '#a7aaab'
-        };
+        let style;
+        if (this.state.hover) {
+            style = {
+                position: 'relative',
+                display: 'block',
+                height: '52px',
+                lineHeight: '52px',
+                fontSize: '18px',
+                paddingLeft: '85px',
+                borderLeft: '4px solid #e55d74',
+                background: '#40444e',
+                color: '#e55d74',
+                transition: 'all 0.25s cubic-bezier(0.35,-0.66, 0.85, 2.11)'
+            }
+        } else {
+            style = {
+                position: 'relative',
+                display: 'block',
+                height: '52px',
+                lineHeight: '52px',
+                fontSize: '18px',
+                paddingLeft: '85px',
+                borderLeft: '4px solid #32363e',
+                color: '#a7aaab',
+                background: '#32363e'
+            }
+        }
+        let spanStyle = {
+            position: 'absolute',
+            left: '36px',
+            top: '13px',
+            width: '30px',
+            height: '30px',
+            backgroundImage: 'url('+sprites+')',
+            backgroundPosition: '-21px -20px'
+        }
         return (
             <li className="navLi">
-                <a href="javascript:;" onClick={this.handleClick} style={liAStyle}>
-                    <span></span>
+                <a href="javascript:;" style={style} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
+                    <span style={spanStyle}></span>
                     {this.props.children}
                 </a>
             </li>

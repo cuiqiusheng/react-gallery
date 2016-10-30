@@ -7,14 +7,6 @@ class HeaderForm extends React.Component{
             marginRight: '40px',
             lineHeight: '40px'
         };
-        let headerFormIconStyle = {
-            float: 'left',
-            width: '40px',
-            height: '40px',
-            borderRadius: '50%',
-            background: '#ccc',
-            marginRight: '12px'
-        };
         let headerFormTextStyle = {
             float: 'left',
             fontSize: '17px',
@@ -22,7 +14,7 @@ class HeaderForm extends React.Component{
         };
         return (
             <a href="javascript:;" className="headerForm" style={headerFormStyle}>
-                <span className="headerFormIcon" style={headerFormIconStyle}></span>
+                <span className="headerFormIcon" style={this.props.style}></span>
                 <i className="headerFormText" style={headerFormTextStyle}>{this.props.children}</i>
             </a>
         );
