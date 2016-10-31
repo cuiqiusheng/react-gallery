@@ -1,70 +1,90 @@
-.box{
-    height: 100%;
+.nav{
+	width: 210px;
+	height: calc(100% - 68px);
+	background: #32363e;
 }
-.nav li a:hover{
+
+.nav-a{
+	position: relative;
+	display: block;
+	height: 52px;
+	line-height: 52px;
+	font-size: 18px;
+	padding-left: 85px;
+	border-left: 4px solid #32363e;
+	color: #a7aaab;
+	background: #32363e;
+}
+.nav-a:hover{
 	background: #40444e;
-	/*-webkit-transition: all 0.2s cubic-bezier(0.62, 0.24, 0.92, 0.54);*/
+	transition: all 0.25s cubic-bezier(0.35,-0.66, 0.85, 2.11);
 }
-/*.nav li:nth-child(1) a span{
+.nav-a-active{
+	color: #e55d74;
+	border-left: 4px solid #e55d74;
+}
+
+
+.span-1{
 	position: absolute;
 	left: 36px;
 	top: 13px;
 	width: 30px;
 	height: 30px;
-	background-image: url(../img/sprites.png);
+	background-image: url(../../images/sprites.png);
 	background-position: -21px -20px;
 }
-.nav li:nth-child(1) a.active span{
+.span-1-active{
 	background-position: -64px -20px;
 }
-.nav li:nth-child(2) a span{
+.span-2{
 	position: absolute;
 	left: 36px;
 	top: 13px;
 	width: 30px;
 	height: 30px;
-	background-image: url(../img/sprites.png);
+	background-image: url(../../images/sprites.png);
 	background-position: -21px -70px;
 }
-.nav li:nth-child(2) a.active span{
+.span-2-active{
 	background-position: -64px -70px;
 }
-.nav li:nth-child(3) a span{
+.span-3{
 	position: absolute;
 	left: 36px;
 	top: 13px;
 	width: 30px;
 	height: 30px;
-	background-image: url(../img/sprites.png);
+	background-image: url(../../images/sprites.png);
 	background-position: -21px -120px;
 }
-.nav li:nth-child(3) a.active span{
+.span-3-active{
 	background-position: -64px -120px;
 }
-.nav li:nth-child(4) a span{
+.span-4{
 	position: absolute;
 	left: 36px;
 	top: 13px;
 	width: 30px;
 	height: 30px;
-	background-image: url(../img/sprites.png);
+	background-image: url(../../images/sprites.png);
 	background-position: -21px -170px;
 }
-.nav li:nth-child(4) a.active span{
+.span-4-active{
 	background-position: -64px -170px;
 }
-.nav li:nth-child(5) a span{
+.span-5{
 	position: absolute;
 	left: 36px;
 	top: 13px;
 	width: 30px;
 	height: 30px;
-	background-image: url(../img/sprites.png);
+	background-image: url(../../images/sprites.png);
 	background-position: -21px -220px;
 }
-.nav li:nth-child(5) a.active span{
+.span-5-active{
 	background-position: -64px -220px;
-}*/
+}
 
 
 
